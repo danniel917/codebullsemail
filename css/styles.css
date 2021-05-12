@@ -1,0 +1,241 @@
+@font-face {
+    font-family: Futura Bk BT;
+    src: url(../Fonts/Futura-Book-font.woff);
+  }
+
+  @font-face {
+    font-family: Futura Heavy;
+    src: url(../Fonts/Futura-Heavy-font.woff);
+  }
+
+  @font-face {
+    font-family: Futura-Black-Bold;
+    src: url(../Fonts/Futura-Black-Bold.woff);
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Futura Bk BT;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+
+.header-container {
+    height: 320.5px;
+    background-image: url('../images/main-image-100.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 20px 0;
+    display: grid;
+    grid-template-rows: 1fr max-content 1fr;
+}
+
+.logo {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.main-title {
+    color: #FFF;
+    margin-bottom: 8px;
+}
+
+.main-title span {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Futura Heavy;
+}
+
+.main-title span:first-child {
+    font-family: Futura-Black-Bold;
+}
+
+.header-text .description {
+    color: #FFF;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    align-self: flex-start;
+    /* margin-bottom: 90px; */
+}
+
+.icon {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+
+.icon img {
+    width: 20px;
+    align-self: end;
+}
+
+main {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+.main-info {
+    background-color: #FFF;
+    padding: 40px 0;
+}
+
+.main-description {
+    text-align: center;
+    width: 73%;
+    margin: 0 auto;
+}
+
+.beneficios {
+    font-family: futura-black-bold;
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #2f00fb;
+}
+
+.beneficios::after {
+    content: ' ';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #2f00fb;
+    margin: 0 auto;
+    margin-top: 10px
+}
+
+.container-beneficios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.beneficios-items img {
+    width: 76px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.beneficios-items span {
+    text-align: center;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.beneficios-items:nth-of-type(2) {
+    background-color: #FFF;
+    padding: 40px 10px;
+    max-width: 180px;
+    box-shadow: 0 7px 10px rgba(12, 0, 63, .25);
+    border-radius: 5px;
+}
+
+.beneficios-items:nth-of-type(2) span {
+    width: 100%;
+}
+
+.second-description {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+}
+
+section.btn {
+    background-color: #d5ccfe;
+    padding: 40px 0;
+}
+
+
+.contact-btn {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.contact-btn a {
+    font-family: Futura Heavy;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 900;
+    color: #FFF;
+    display: inline-block;
+    padding: 10px 30px;
+    background: #2f00fb;
+    border-radius: 3px;
+    box-shadow: 0 7px 10px rgba(12, 0, 63, .25);
+    /* letter-spacing: 1px; */
+    font-weight: bold;
+}
+
+footer {
+    background-color: #000;
+    padding: 20px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social {
+    justify-self: flex-end;
+}
+
+.powered img {
+    width: 160px;
+}
+
+.social a img {
+    width: 20px;
+}
+
+
+@media screen and (max-width: 500px){
+    .main-description,
+    .header-text .description,
+    .second-description {     
+        width: 80%;
+    }
+
+    .container-beneficios {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
